@@ -32,3 +32,14 @@
 
 - ```wscat -c url_de_conexao_do_websocket```
 - Exemplo de chamada ```{"action":"sendPublic", "message":"Hello World!"}```
+
+Mensagem pública
+
+    {"action": "sendPublic", "message": "A mensagem"}
+
+    {"action": "sendPrivate", "message": "A mensagem", "to": "nome-do-enviador"}
+
+
+Não esquecer de adicionar a função no IIAM
+
+    AmazonAPIGatewayInvokeFullAccess
